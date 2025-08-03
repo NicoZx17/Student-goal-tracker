@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Goal Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>🎯 Stay on Track: Student Goal Tracker</h1>
+
+  <div id="goal-section">
+    <input type="text" id="goalInput" placeholder="Enter your goal..." />
+    <button onclick="addGoal()">Add Goal</button>
+  </div>
+
+  <ul id="goalList"></ul>
+
+  <button onclick="generatePrompt()">💡 Need Focus?</button>
+  <p id="promptOutput"></p>
+
+  <button onclick="exportData('csv')">📤 Export as CSV</button>
+  <button onclick="exportData('json')">📤 Export as JSON</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
